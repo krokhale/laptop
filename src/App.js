@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import Cart from './Cart/Cart';
+import Display from './Features/Display';
+import Os from './Features/Os';
+import Processor from './Features/Processor';
+import VideoCard from './Features/VideoCard';
 
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
@@ -97,6 +102,11 @@ class App extends Component {
 
     return (
       <div className="App">
+        <Processor />
+        <Os />
+        <VideoCard />
+        <Display />
+        <Cart />
         <header>
           <h1>ELF Computing | Laptops</h1>
         </header>
