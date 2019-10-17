@@ -1,14 +1,11 @@
-
-
 import React, { Component } from 'react';
 import Specs from './Specs';
-
-
 
 
 class MainForm extends Component {
     render() {
 
+        // console.log(this.props);
 
         return (
             <div>

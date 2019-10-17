@@ -4,6 +4,7 @@ import Option from './Option';
 class MainSummary extends Component {
     render() {
 
+        console.log(this.props)
         return (
             <section className="main__summary">
                 <h2>Your Cart</h2>

@@ -71,6 +71,7 @@ class App extends Component {
             feature={feature}
             selectedOption={selectedOption}
           />}
+
           {feature === 'Video Card' && <MainSummary
             feature={feature}
             selectedOption={selectedOption}

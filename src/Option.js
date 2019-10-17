@@ -6,7 +6,6 @@ class Option extends Component {
 
     render() {
         //console.log('Option ' + this.props.total);
-
         return (
             <div>
                 {this.props.feature}
@@ -23,4 +22,3 @@ class Option extends Component {
 }
 
 export default Option;
-

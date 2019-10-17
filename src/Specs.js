@@ -9,30 +9,41 @@ class Specs extends Component {
         let itemHash = this.props.itemHash;
         return (
             <div>
-                {feature === 'Processor' && <Parts
+                {/*{feature === 'Processor' && <Parts*/}
+                {/*    feature={feature}*/}
+                {/*    item={item}*/}
+                {/*    itemHash={itemHash}*/}
+                {/*    updateFeature={this.props.updateFeature}*/}
+                {/*    selected={this.props.selected} />}*/}
+
+
+                {/*{feature === 'Operating System' && <Parts*/}
+                {/*    feature={feature}*/}
+                {/*    item={item}*/}
+                {/*    itemHash={itemHash}*/}
+                {/*    updateFeature={this.props.updateFeature}*/}
+                {/*    selected={this.props.selected} />}*/}
+
+                <Parts
                     feature={feature}
                     item={item}
                     itemHash={itemHash}
                     updateFeature={this.props.updateFeature}
-                    selected={this.props.selected} />}
-                {feature === 'Operating System' && <Parts
-                    feature={feature}
-                    item={item}
-                    itemHash={itemHash}
-                    updateFeature={this.props.updateFeature}
-                    selected={this.props.selected} />}
-                {feature === 'Video Card' && <Parts
-                    feature={feature}
-                    item={item}
-                    itemHash={itemHash}
-                    updateFeature={this.props.updateFeature}
-                    selected={this.props.selected} />}
-                {feature === 'Display' && <Parts
-                    feature={feature}
-                    item={item}
-                    itemHash={itemHash}
-                    updateFeature={this.props.updateFeature}
-                    selected={this.props.selected} />}
+                    selected={this.props.selected} />
+
+
+                {/*{feature === 'Video Card' && <Parts*/}
+                {/*    feature={feature}*/}
+                {/*    item={item}*/}
+                {/*    itemHash={itemHash}*/}
+                {/*    updateFeature={this.props.updateFeature}*/}
+                {/*    selected={this.props.selected} />}*/}
+                {/*{feature === 'Display' && <Parts*/}
+                {/*    feature={feature}*/}
+                {/*    item={item}*/}
+                {/*    itemHash={itemHash}*/}
+                {/*    updateFeature={this.props.updateFeature}*/}
+                {/*    selected={this.props.selected} />}*/}
 
             </div>
         )

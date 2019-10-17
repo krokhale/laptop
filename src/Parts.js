@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import slugify from 'slugify';
+import PartLabel from "./PartLabel";
 
-const USCurrencyFormat = new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD'
-});
+// const USCurrencyFormat = new Intl.NumberFormat('en-US', {
+//     style: 'currency',
+//     currency: 'USD'
+// });
 class Parts extends Component {
     render() {
         return (
@@ -17,9 +18,12 @@ class Parts extends Component {
                     checked={this.props.item.name === this.props.selected[this.props.feature].name}
                     onChange={e => this.props.updateFeature(this.props.feature, this.props.item)}
                 />
-                <label htmlFor={this.props.itemHash} className="feature__label">
-                    {this.props.item.name} ({USCurrencyFormat.format(this.props.item.cost)})
-                 </label> 
+
+                <PartLabel itemHash={this.props.itemHash}
+                           item={this.props.item} />
+                {/*<label htmlFor={this.props.itemHash} className="feature__label">*/}
+                {/*    {this.props.item.name} ({USCurrencyFormat.format(this.props.item.cost)})*/}
+                {/* </label> */}
             </div>
         )
     }
