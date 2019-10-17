@@ -5,12 +5,11 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD'
 });
-
-class FeatureTemplate extends Component {
-    render(){
-        return(
+class Parts extends Component {
+    render() {
+        return (
             <div>
-                <input
+                 <input
                     type="radio"
                     id={this.props.itemHash}
                     className="feature__option"
@@ -20,9 +19,9 @@ class FeatureTemplate extends Component {
                 />
                 <label htmlFor={this.props.itemHash} className="feature__label">
                     {this.props.item.name} ({USCurrencyFormat.format(this.props.item.cost)})
-                </label>
+                 </label> 
             </div>
         )
     }
 }
-export default FeatureTemplate;
+export default Parts;
